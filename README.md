@@ -24,6 +24,9 @@ Versiunea web permite utilizatorilor să:
 * JavaScript
 * LocalStorage
 
+<img width="800" height="470" alt="site" src="https://github.com/user-attachments/assets/788e2656-d6ba-4dd2-89cd-07a575b15232" />
+
+
 ## ⚛️ React
 
 Versiunea React a proiectului urmărește aceeași idee de gestionare a evenimentelor, dar folosește componente React și state management.
@@ -43,6 +46,9 @@ Funcționalități:
 * React
 * JavaScript / TypeScript
 * React Hooks
+
+<img width="1280" height="752" alt="react" src="https://github.com/user-attachments/assets/b2b2e0dc-fd4c-4696-a3b2-bb9a39d17e58" />
+
 
 ## 📱 React Native
 
@@ -70,6 +76,8 @@ Pentru persistența datelor am folosit `AsyncStorage`.
 * AsyncStorage
 * React Native Picker
 * React Native DateTimePicker
+
+<img width="1080" height="2400" alt="reactnative (1)" src="https://github.com/user-attachments/assets/c22251b6-90a0-4054-a592-402fe3b20c57" />
 
 ## 💡 Ce am învățat
 
