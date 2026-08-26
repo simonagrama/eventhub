@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>EventHub</h1>
+    </header>
+
+    <main>
+        <h2>Descoperă evenimente</h2>
+
+        <input
+            type="text"
+            placeholder="Caută evenimente..."
+        >
+
+        <select id="category-filter">
+            <option value="all">Toate categoriile</option>
+            <option value="Muzică">Muzică</option>
+            <option value="Tehnologie">Tehnologie</option>
+        </select>
+
+        <h2>Adaugă un eveniment</h2>
+
+        <form id="event-form">
+            <input
+                type="text"
+                id="event-title"
+                placeholder="Titlul evenimentului"
+                required
+            >
+
+            <input
+                type="text"
+                id="event-city"
+                placeholder="Oraș"
+                required
+            >
+
+            <input
+                type="date"
+                id="edit-date"
+                required
+            >
+
+            <select id="event-category" required>
+                <option value="">Alege categoria</option>
+                <option value="Muzică">Muzică</option>
+                <option value="Tehnologie">Tehnologie</option>
+            </select>
+
+            <input
+                type="number"
+                id="event-price"
+                placeholder="Preț"
+                min="0"
+                required
+            >
+
+            <textarea
+                id="event-description"
+                placeholder="Descriere"
+                required
+            ></textarea>
+            
+            <p id="form-message"></p>
+            
+            <button type="submit">Adaugă eveniment</button>
+        </form>
+
+        <div id="edit-form-container" style="display: none;">
+    <h2>Editează evenimentul</h2>
+
+    <form id="edit-form">
+        <input
+            type="text"
+            id="edit-title"
+            placeholder="Titlul evenimentului"
+            required
+        >
+
+        <input
+            type="text"
+            id="edit-city"
+            placeholder="Oraș"
+            required
+        >
+
+        <input
+            type="date"
+            id="edit-date"
+            required
+        >
+
+        <select id="edit-category" required>
+            <option value="">Alege categoria</option>
+            <option value="Muzică">Muzică</option>
+            <option value="Tehnologie">Tehnologie</option>
+        </select>
+
+        <input
+            type="number"
+            id="edit-price"
+            placeholder="Preț"
+            min="0"
+            required
+        >
+
+        <textarea
+            id="edit-description"
+            placeholder="Descriere"
+            required
+        ></textarea>
+
+        <p id="edit-form-message"></p>
+
+        <button type="submit">Salvează modificările</button>
+        <button type="button" id="cancel-edit">Anulează</button>
+    </form>
+        </div>
+
+        <section id="events-container"></section>
+
+        <div id="event-details"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
